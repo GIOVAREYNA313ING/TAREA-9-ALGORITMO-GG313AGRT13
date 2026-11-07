@@ -1,0 +1,5 @@
+DELETE FROM dbo.Gastos;
+DBCC CHECKIDENT ('dbo.Gastos', RESEED, 0);
+INSERT INTO dbo.Gastos (Descripcion, Monto, Categoria) VALUES
+('Almuerzo', 45.50, 'Comida'), ('Gasolina', 250.00, 'Transporte'), ('Cine', 75.00, 'Entretenimiento');
+INSERT INTO dbo.Gastos (Descripcion, Monto, Categoria) VALUES ('Café', 12.00, 'Comida');
